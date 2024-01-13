@@ -13,6 +13,15 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/txtSide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your Turn, Click on dice to continue."
+            android:textColor="#fa0"
+            android:textSize="20dp" />
+
+        <TextView
             android:id="@+id/textView5"
             style="@style/title"
             android:layout_width="match_parent"
@@ -51,11 +60,13 @@
 
             <ImageView
                 android:id="@+id/imgDice"
-                android:layout_width="96dip"
-                android:layout_height="96dip"
-                android:layout_gravity="center"
-                tools:srcCompat="@drawable/dice_1" />
-
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.4"
+                app:srcCompat="@drawable/dice_6"
+                />
         </LinearLayout>
 
         <TextView
@@ -77,6 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="12" />
+
 
             <TextView
                 android:id="@+id/txtPcDetail"
